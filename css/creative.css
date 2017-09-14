@@ -25,7 +25,9 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #f05f40; }
+    color: #f05f40; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+}
 
 h1,
 h2,
@@ -33,12 +35,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+ }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+ }
 
 .bg-primary {
   background-color: #F05F40 !important; }
@@ -79,6 +85,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
