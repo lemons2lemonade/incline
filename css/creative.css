@@ -26,7 +26,7 @@ a {
   transition: all 0.2s; }
   a:focus, a:hover {
     color: #f05f40; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+    text-shadow: -1px 0 #F05F40, 0 1px #F05F40, 1px 0 #F05F40, 0 -1px #F05F40; /*<!-- Newly added -->*/
 }
 
 h1,
@@ -36,14 +36,29 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Newly added -->*/
  }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+  margin-bottom: 20px; 
+ }
+
+#inputEmail {
+  padding: 10px 10px 10px 10px;
+}
+#well {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #F05F40;
+}
+/*black color*/
+.blk {
+  color:black;
+}
+ /*Border for text*/
+ .bord { 
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
  }
 
 .bg-primary {
@@ -85,7 +100,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; <!-- Newly added -->
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; <!-- Newly added -->
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
