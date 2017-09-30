@@ -45,6 +45,13 @@ p {
   margin-bottom: 20px; 
  }
 
+#signInSwitchButton:hover {
+  opacity: 0.75;
+}
+
+#signUpSwitchButton:hover {
+  opacity: 0.75;
+}
 #inputEmail {
   padding: 10px 10px 10px 10px;
 }

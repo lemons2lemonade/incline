@@ -9,8 +9,6 @@
 
     <title>Signin Template for Bootstrap</title>
 
-    <!--JavaScript File-->
-    <script type="text/javascript" src="actions.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
@@ -30,28 +28,91 @@
     <link href="css/creative.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="switchButton()">
     <!--Header-->
       <!-- Navigation -->
+
+    <!--Page 1-->
+    <div id="page1">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger"  style = "color:black;" href="#page-top">Incline</a>
+        <a class="navbar-brand js-scroll-trigger"  style = "color:black;" href="index.html">Incline</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#services">Key Features</a>
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html#services">Key Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style = "color:black;" href="">Mockup</a>
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html">Mockup</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#page-top">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of header-->
+  <br/>
+  <br/>
+    <div class="well" id="well">
+    <div class="container">
+        <div>
+          <button style="float: left; transition: all 3s ease 0s" onclick="switchUpToIn()" id="signInSwitchButton">Sign In</button>
+        </div>
+
+      <form class="form-signin">
+        
+        <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
+          <label for="inputEmailLabel" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputUsername" class="sr-only">Username</label>
+          <input type="username" id="inputUsername" class="form-control" placeholder="Username" required>
+          <p id="usernameDirections">Note: Username must be at least 5 characters long</p>
+
+           <label for="inputPassword" class="sr-only">Password</label>
+           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button onclick="validateData()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign up</button>
+      </form>
+
+    </div> <!-- /container -->
+  </div>
+</div> <!--Page 1-->
+
+
+<!--page 2-->
+    <div id="page2" style="display:none">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger"  style = "color:black;" href="index.html">Incline</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html#services">Key Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html">Mockup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#page-top">Login</a>
             </li>
           </ul>
         </div>
@@ -64,29 +125,35 @@
     <div class="container">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
-        <label for="inputEmailLabel" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputUsername" class="sr-only">Username</label>
-        <input type="usename" id="inputUsername" class="form-control" placeholder="Username" required>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div>
+          <button id = "signUpSwitchButton" style="float: right; -webkit-transition: all 3s ease 0s" onclick="switchInToUp()">Sign Up</button>
+        </div>
+        
+        <h2 class="form-signin-heading" style="text-align: center">Sign In</h2>
+  
+          <label for="inputUsername" class="sr-only">Username</label>
+          <input type="usename" id="inputUsername" class="form-control" placeholder="Username" required>
+          
+           <label for="inputPassword" class="sr-only">Password</label>
+           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="validateData(document.getElementById('inputUsername'))">Sign in</button>
+        <button onclick="validateData()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
       </form>
 
     </div> <!-- /container -->
   </div>
-
+</div>
+<!--end of page 2-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="actions.js"> </script>
   </body>
 </html>
