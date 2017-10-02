@@ -8,8 +8,7 @@
     <meta name="author" content="">
 
 <title>Current Technical Mockup</title>
-<h1> Current Technical Mockup </h1>
-<p> hello </p>
+
 <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,13 +23,65 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
     
+
+
+
  </head>
 
+
+<!-- Navbar -->
+<div class= "container">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+  <a href="#"> <i class = "fa fa-envelope-o" aria-hidden="true">Messages</i> </a>
+  <a href="#"> <i class = "fa fa-drivers-license-o">Account</i></a>
+  <a href="#"> <i class = "fa fa-gears">Settings</i></a>  
+</div>
+</nav>
+</div>
+
+<div class="container">
+	<div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <input type="text" class="search-query" placeholder="Search">
+                   <a href="#" class="btn">
+      <i class="fa fa-search" aria-hidden="true"></i> 
+    </a>
+                </div>
+            </form>
+        </div>
+	</div>
+</div>
+ 
+
+
 <body id="page-top">
-
+</br>
+<center><h1>Do Something Interesting </h1><center>
   <!-- Middle of Page - TODO: PUT CONTENT HERE -->
+</br>
+</br>
+<center><h4 class= "diagonal">Coming soon: Trending Feed Behavior</h4></center>
 
 
+<div class= "well">
+<div class= "col-lg-4 col-lg-offset-4">
+ <div class="form-group">
+  <label for="content-box">Go on...</label>
+<button class="btn" onclick="validateTextBox()" input type="submit"> <i class="fa fa-send-o"></i> </button>
+  <textarea class="form-control" name="content" rows="5" id="comment"></textarea>
+
+ <div class="form-group">
+  <label for="content-box">Go on...</label>
+<button class="btn" onclick="validateTextBox()" input type="submit"> <i class="fa fa-send-o"></i> </button>
+  <textarea type="text" class="form-control" name="content" rows="5" id="comment"></textarea>
+
+</div>
+</div> 
+</div>
+</div>
 
 
 
@@ -52,5 +103,16 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
+
+
+<script>
+function validateTextBox(){
+var text = document.forms["content"].value;
+
+if (text =="")
+	alert("Please fill out post form and resubmit.");
+	return false;
+}
+</script>
 </body>
     </html>

@@ -4,3 +4,10 @@
 4. Create Post page - Rakib
 2. add feed page - Matthew
 3. Add JS to site
+
+
+Add dynamic behavior - have some variable types change in JS
+
+Add in progress transformation tag
+
+
