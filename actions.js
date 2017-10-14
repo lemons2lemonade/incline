@@ -4,7 +4,6 @@ function validateData(){
 		var errorStr = error.fontcolor("red");
 		document.getElementById("usernameDirections").innerHTML=errorStr;
 	}
-
 }
 
 function switchInToUp(x){

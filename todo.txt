@@ -1,3 +1,4 @@
+<-- Assignment 3 -->
 1. Add signup page - Rakib
 2. Sign in - Matthew
 3. Contact - Rakib
@@ -10,4 +11,9 @@ Add dynamic behavior - have some variable types change in JS
 
 Add in progress transformation tag
 
+<--Assignment 4-->
+Rakib: Finish making your profile. Recheck password, input validation.
+After logging in, put username in upper right hand corner
 
+Matthew:
+Finish Mockup and user posting mechanism. 
