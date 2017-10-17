@@ -1,0 +1,13 @@
+1. Add signup page - Rakib
+2. Sign in - Matthew
+3. Contact - Rakib
+4. Create Post page - Rakib
+2. add feed page - Matthew
+3. Add JS to site
+
+
+Add dynamic behavior - have some variable types change in JS
+
+Add in progress transformation tag
+
+
