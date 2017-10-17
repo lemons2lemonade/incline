@@ -68,7 +68,7 @@
           <button style="float: left; transition: all 3s ease 0s" onclick="switchUpToIn()" id="signInSwitchButton">Sign In</button>
         </div>
         
-      <form class="form-signin" method="post" action="SignUpForm.php">
+      <form class="form-signin" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
         <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
           <label class="sr-only">Profile Image</label>
@@ -98,6 +98,16 @@
 
     </div> <!-- /container -->
   </div>
+  <?php
+    echo "Your input";
+    echo "<br>";
+    echo $Email;
+    echo "<br>";
+    echo $Username;
+    echo "<br>";
+    echo $Password;
+    echo "<br>";
+  ?>
 </div> <!--Page 1-->
 
 
@@ -151,12 +161,14 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button onclick="validateData()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+
+        <button onclick="validateData()" class="btn btn-lg btn-primary btn-block" type="submit" name="submitForm">Sign in</button>
       </form>
 
     </div> <!-- /container -->
   </div>
 </div>
+
 <!--end of page 2-->
 
     <!-- Bootstrap core JavaScript

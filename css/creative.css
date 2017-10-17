@@ -10,7 +10,11 @@ html {
 
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
-
+body.bg{
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  background-image: url("../img/Test.jpg");
+  background-size: cover;
+}
 /* Newly Added */
 .diagonal {
 background-color: orange;
@@ -67,6 +71,11 @@ p {
 #well {
   padding: 10px 10px 10px 10px;
   border: 1px solid #F05F40;
+  width: 80%;
+  margin: auto;
+  -moz-box-shadow: 10px 10px 30px #ccc;
+  -webkit-box-shadow: 10px 10px 30px #ccc;
+  box-shadow: 10px 10px 30px #ccc;
 }
 /*black color*/
 .blk {
