@@ -68,7 +68,7 @@
           <button style="float: left; transition: all 3s ease 0s" onclick="switchUpToIn()" id="signInSwitchButton">Sign In</button>
         </div>
         
-      <form class="form-signin" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+      <form class="form-signin" method="post" action="http://localhost:8080/incline1/examples.SignUpHandler">
 
         <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
           <label class="sr-only">Profile Image</label>
@@ -98,16 +98,6 @@
 
     </div> <!-- /container -->
   </div>
-  <?php
-    echo "Your input";
-    echo "<br>";
-    echo $Email;
-    echo "<br>";
-    echo $Username;
-    echo "<br>";
-    echo $Password;
-    echo "<br>";
-  ?>
 </div> <!--Page 1-->
 
 
@@ -143,7 +133,7 @@
     <div class="well" id="well" style="background-color: #f48942">
     <div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" method="post" action="http://localhost:8080/incline1/examples.SessionKeeper">
         <div>
           <button id = "signUpSwitchButton" style="float: right; -webkit-transition: all 3s ease 0s" onclick="switchInToUp()">Sign Up</button>
         </div>
@@ -151,10 +141,11 @@
         <h2 class="form-signin-heading" style="text-align: center">Sign In</h2>
   
           <label for="inputUsername" class="sr-only">Username</label>
-          <input type="usename" id="inputUsername" class="form-control" placeholder="Username" required>
+          <input type="usename" id="inputUsername" name = "username"
+          class="form-control" placeholder="Username" required>
           
            <label for="inputPassword" class="sr-only">Password</label>
-           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+           <input type="password" name = "password" id="inputPassword" class="form-control" placeholder="Password" required>
 
         <div class="checkbox">
           <label>

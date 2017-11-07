@@ -1,4 +1,4 @@
-package Sessions;
+package examples;
 
 import java.io.IOException;
 import java.io.PrintWriter;
