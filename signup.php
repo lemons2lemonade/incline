@@ -53,7 +53,10 @@
               <a class="nav-link js-scroll-trigger" style = "color:black;" href="mockup.html">Mockup</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style = "color:black;" href="#page-top">Login</a>
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="authentication.jsp">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="signup.php">Login</a>
             </li>
           </ul>
         </div>
@@ -68,7 +71,7 @@
           <button style="float: left; transition: all 3s ease 0s" onclick="switchUpToIn()" id="signInSwitchButton">Sign In</button>
         </div>
         
-      <form class="form-signin" method="post" action="http://localhost:8080/incline1/examples.SignUpHandler">
+      <form class="form-signin" method="post" action="http://localhost:8080/incline1/profileSessionUpdate.jsp">
 
         <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
           <label class="sr-only">Profile Image</label>
@@ -93,7 +96,7 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button onclick="validateData()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign up</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign up</button>
       </form>
 
     </div> <!-- /container -->
@@ -119,6 +122,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" style = "color:black;" href="index.html">Mockup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style = "color:black;" href="authentication.jsp">Profile</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" style = "color:black;" href="#page-top">Login</a>
