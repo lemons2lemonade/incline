@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Signin page</title>
+    <title>OTHERRRRRRR</title>
 
 
     <!-- Custom styles for this template -->
@@ -29,7 +29,7 @@
   </head>
 
   <body onload="switchButton()" class="bg">
-  <?php include 'SignUpForm.php';?>
+ <!-- <?php include 'SignUpForm.php';?>-->
     <!--Header-->
       <!-- Navigation -->
 
@@ -70,8 +70,9 @@
         <div>
           <button style="float: left; transition: all 3s ease 0s" onclick="switchUpToIn()" id="signInSwitchButton">Sign In</button>
         </div>
-        
-      <form class="form-signin" method="post" action="http://localhost:8080/incline1/profileSessionUpdate.jsp">
+        <!-- <form class="form-signin" method="post" action="http://localhost:8080/incline1/profileSessionUpdate.jsp"> -->
+      
+      <form class="form-signin" action="SignUpForm.php" method="post" >
 
         <h2 class="form-signin-heading" style="text-align: center">Sign Up</h2>
           <label class="sr-only">Profile Image</label>
@@ -138,8 +139,8 @@
   <br/>
     <div class="well" id="well" style="background-color: #f48942">
     <div class="container">
-
-      <form class="form-signin" method="post" action="http://localhost:8080/incline1/examples.SessionKeeper">
+	 <!-- Old line: <form class="form-signin" method="post" action="http://localhost:8080/incline1/examples.SessionKeeper"> -->
+      <form class="form-signin"  action="SignUpForm.php" method="post">
         <div>
           <button id = "signUpSwitchButton" style="float: right; -webkit-transition: all 3s ease 0s" onclick="switchInToUp()">Sign Up</button>
         </div>
